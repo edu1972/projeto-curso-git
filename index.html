@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Assembléia de Deus Madureira de Canoas</title>
+
+    <style type="text/css">
+        /*Configurações Padrões*/
+        
+        ul.menu,
+        .menu li,
+        .menu a {
+            margin: 0px;
+            padding: 0px 10px;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        ul.menu ul {
+            position: absolute;
+            display: none;
+            box-shadow: 3px 3px 2px #333;
+        }
+        /* Configurações nivel 1*/
+        
+        ul.menu {
+            float: left;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 0 5px;
+        }
+        
+        .menu li {
+            float: left;
+            width: auto;
+            position: relative;
+        }
+        
+        .menu li a {
+            display: block;
+            padding: 0 30px;
+            line-height: 45px;
+            height: 45px;
+            float: left;
+            transition: all 0.1s linear;
+        }
+        /* Configurações nivel 2*/
+        
+        .menu li:hover>ul.submenu-1 {
+            display: block;
+            top: 45px;
+            left: 10px;
+            padding: 1px;
+            width: 200px;
+            border-radius: 0 5px 5px 5px;
+        }
+        
+        .menu ul.submenu-1 a {
+            width: 160px;
+            padding: 0px 8px;
+            border-radius: 5px;
+        }
+        /* Configurações nivel 2*/
+        
+        .menu li:hover>ul.submenu-2 {
+            display: block;
+            top: 0;
+            left: 195px;
+            padding: 5px;
+            width: 200px;
+            border-radius: 0 5px 5px 5px;
+        }
+        
+        .menu ul.submenu-2 a {
+            width: 160px;
+            padding: 0 20px;
+            border-radius: 5px;
+        }
+        /* Configurações nivel 3*/
+        
+        .menu li:hover>ul.submenu-3 {
+            display: block;
+            top: 0;
+            left: 195px;
+            padding: 5px;
+            width: 200px;
+            border-radius: 0 5px 5px 5px;
+        }
+        
+        .menu ul.submenu-3 a {
+            width: 160px;
+            padding: 0 20px;
+            border-radius: 5px;
+        }
+        /*Configurações de cores*/
+        /*nivel 1*/
+        
+        .menu {
+            background: #CCC;
+        }
+        
+        .menu a {
+            color: #000;
+        }
+        
+        .menu li:hover>a {
+            background: #999;
+            color: #fff;
+        }
+        /*nivel 2*/
+        
+        .submenu-1 {
+            background: #999;
+        }
+        
+        .submenu-1 a {
+            color: #fff;
+        }
+        
+        .submenu-1 li:hover>a {
+            background: #666;
+        }
+        /*nivel 3*/
+        
+        .submenu-2 {
+            background: #666;
+        }
+        
+        .submenu-2 a {
+            color: #fff;
+        }
+        
+        .submenu-2 li:hover>a {
+            background: #333;
+        }
+        /*nivel 3*/
+        
+        .submenu-3 {
+            background: #333;
+        }
+        
+        .submenu-3 a {
+            color: #fff;
+        }
+        
+        .submenu-3 li:hover>a {
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>
+        <center>AD Ministério Madureira de Canoas - RS</center>
+        <center>Rua Araguaia, 1230 - Igara</center>
+    </h1>
+
+
+    <ul class="menu">
+        <!-- Esse é o 1 nivel ou o nivel principal -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Igreja</a>
+            <ul class="submenu-1">
+                <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+                <li><a href="#">História</a></li>
+                <li><a href="#">Missão</a></li>
+                <li><a href="#">Diretoria</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Congregação</a>
+            <ul class="submenu-1">
+                <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+                <li><a href="#">Sede</a></li>
+                <li><a href="#">Estância Velha</a></li>
+                <li><a href="#">Rio Branco</a></li>
+                <li><a href="#">Sto A. da Patrulha</a></li>
+                <li><a href="#">Tapes</a></li>
+                <li><a href="#">Glorinha</a></li>
+                <li><a href="#">Três Passos</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Departamentos</a>
+            <ul class="submenu-1">
+                <li><a href="#">Secretaria</a></li>
+                <li><a href="#">Tesouraria</a></li>
+                <li><a href="#">Missões</a></li>
+                <li><a href="#">Jovens</a></li>
+                <li><a href="#">CIBE</a></li>
+                <li><a href="#">Adolescente</a></li>
+                <li><a href="#">Infantil</a></li>
+                <li><a href="#">Varões</a></li>
+                <li><a href="#">Evangelismo</a></li>
+                <li><a href="#">Família</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Agenda</a></li>
+        <li><a href="#">Pedido de Orações</a></li>
+        <!-- <div>
+            <form action="/action_page.php">
+                <label for="fname">Nome</label>
+                <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+
+                <label for="lname">Sobrenome</label>
+                <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+
+                <label for="country">Congregação</label>
+                <select id="country" name="country">
+          <option value="sede">Sede</option>
+          <option value="estancia">Estância Velha</option>
+          <option value="glorinha">Glorinha</option>
+          <option value="riobranco">Rio Branco</option>
+          <option value="stoantonio">Santo Antônio da Patrulha</option>
+          <option value="tapes">Tapes</option>
+          <option value="trespassos">Três Passos</option>
+        </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div> -->
+
+
+    </ul>
+
+</body>
+
+</html>
